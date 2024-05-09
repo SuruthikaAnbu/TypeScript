@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.mainmain{
+    height: 30rem;
+    width: 40rem;
+    text-align: center;
+    background-position:bottom;
+    background-size: cover;
+    background-color:#f0ece2;
+    
+}
+
+.main{
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    background: url("Images/metro2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main button{
+    height: 3rem;
+    width:20rem;
+    background-color:rgb(64, 137, 120);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+}
+.main button:hover{
+    background-color: darkgreen;
+  
+    
+}
+.sub{
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+    
+}
+.sub button{
+    padding: 0;
+    margin: 0;
+    height: 3rem;
+    width: 7.5rem;
+    background-color:#c7b198 ;
+    border-radius: 3rem;
+    box-shadow: 1px 1px 5px black;
+    
+}
+.sub button:hover{
+    background-color:#dfd3c3;
+}
+.sub div{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.sign div{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.sign button{
+    height: 2rem;
+    width: 10rem;
+    background-color:#c7b198;
+    font-size: small;
+}
+.sign button:hover{
+  background-color: #596e79;
+}
+.menubar{
+    padding: 0;
+}

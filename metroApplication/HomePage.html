@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <div class="mainmain" >
+        <div id="main2" style="display: block;">
+            <div class="main">
+                <div><button onclick="viewSignIn()">Signin</button></div>
+                <div><button onclick="viewSignUp()">Signup</button></div>
+            </div>
+        </div>
+        <!--Sign in grttting user details-->
+        <div id="signinid" style="display: none;" class="sign">
+            <div>Sign-In Page</div>
+            <div>Enter your Card Number :</div>
+            <input type="text" name="" id="cardnumber">
+            <div>
+                <button onclick="signInfun()">Submit</button>
+            </div>
+        </div>
+        <!--Sign UP-->
+        <div id="signupId" style="display: none;">
+            <div>---------Sign UP page----------</div>
+            <div>User name</div>
+            <input type="text" id="name">
+            <div>Phone number</div>
+            <input type="number" id="phone">
+            <div>Balance</div>
+            <input type="number" id="balance">
+            <div id="cardgreet"></div>
+            <br>
+            <button onclick="signOutfun()">Sign-Up</button>
+            <button onclick="viewSignIn()">SignIn</button>
+        </div>
+        <!--menu bar-->
+        <div class="sub" style="display: none;" id="menubarid" class="menubar">
+            <button onclick="balanceCheckfun()">balance Check</button>
+            <button onclick="recharge()">recharge</button>
+            <button onclick="viewTravelHistory()">Travel History</button>
+            <button onclick="ticketFairDetails()">Travel</button>
+            <button onclick="exitvis()">Exit</button>
+        </div>
+        <!--Recharge-->
+        <div id="rechargeID" style="display: none;">
+            <h1>Recharge</h1>
+            <label for="">Enter the amount for recharge</label>
+            <input type="number" id="amount">
+            <button id="rechargeAmount" onclick="recharge()">Recharge</button>
+            <div id="displayAmount"></div>
+        </div>
+        <!--Display travel history-->
+        <div id="travelID" style="display: none;">
+            <table id="traveldata" border="1">
+                <thead>
+                    <tr>
+                        <th>TravelID</th>
+                        <th>TicketID</th>
+                        <th>CardNumber</th>
+                        <th>FromLocation</th>
+                        <th>ToLocation</th>
+                        <th>Date</th>
+                        <th>TravelCost</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Display ticket details-->
+        <div id="ticketID" style="display: none;">
+            <table id="ticketData" border="1">
+                <thead >
+                    <tr>
+                        <th>TicketID</th>
+                        <th>FromLocation</th>
+                        <th>ToLocation</th>
+                        <th>Fair</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <!--exit-->
+        <div id="exitdiv" style="display: none;">
+            <div id="exitGreet"></div>
+            <button onclick="exit()">exit</button>
+        </div>
+        
+
+    </div>
+    <script src="HomePage.js"></script>
+</body>
+</html>
